@@ -77,7 +77,7 @@ flowchart TB
   T2 --> T3[Job SageMaker: unir el mejor checkpoint<br/>r5.8xlarge CPU]
   T3 --> T4[Job SageMaker: examen<br/>vLLM, 300 turnos]
   T4 --> J[Juez en Bedrock: Opus, 300 llamadas]
-  J --> TB[Tabla, página en vivo,<br/>aviso por WhatsApp al fundador]
+  J --> TB[Tabla, página en vivo,<br/>aviso por WhatsApp al líder comercial]
 ```
 
 Los *training jobs* de SageMaker se usan para entrenar y también para inferencia por lotes: cobran por segundo, se

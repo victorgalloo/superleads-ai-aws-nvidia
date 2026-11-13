@@ -75,7 +75,7 @@ flowchart TB
   T2 --> T3[SageMaker job: merge best checkpoint<br/>r5.8xlarge CPU]
   T3 --> T4[SageMaker job: exam generation<br/>vLLM, 300 turns]
   T4 --> J[Bedrock judge: Opus, 300 calls]
-  J --> TB[Results table, live page,<br/>WhatsApp notice to the founder]
+  J --> TB[Results table, live page,<br/>WhatsApp notice to the sales lead]
 ```
 
 SageMaker *training jobs* are used for batch inference as well as training: they bill per second, stop on their own,

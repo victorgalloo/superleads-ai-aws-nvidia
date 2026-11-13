@@ -7,6 +7,11 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 
 ## Semana del 9 al 13 de noviembre de 2026
 
+**Créditos y programas**
+- Documentamos los $10k USD en créditos AWS Activate Portfolio obtenidos por NVIDIA Inception (oct 2026) y el siguiente nivel que pedimos (AWS Credits for AI Startups, con nuestro Account Manager de AWS).
+- Solicitamos el piloto de créditos de NVIDIA Brev para miembros de Inception.
+- Reunión con AWS Startups agendada para el 20 nov 2026.
+
 **IA de admisiones sobre NVIDIA Nemotron (SageMaker + Bedrock)**
 - Se armó el corpus anonimizado en S3: 1.3M mensajes de chat, 86 mil prospectos, 80 escuelas (~193 GB con checkpoints).
 - Fichas por escuela (precios y becas fuera, en código); las de entrenamiento las escribe Nemotron en GPU.
@@ -18,7 +23,7 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 - Análisis de todas las conversaciones cerradas (solo conteos): 48% de los prospectos escriben fuera de horario;
   invitar a la visita va con 2.4 veces más citas dentro de la misma escuela.
 - Citas reales: 354,602 leads en 101 escuelas; agenda el 2.8%.
-- Página en vivo del avance para los fundadores, con buzón de ideas que contesta el agente.
+- Página en vivo del avance para el equipo, con buzón de ideas que contesta el agente.
 - SageMaker: 29 jobs, 24.8 horas facturables, $299.51 USD (estimado a precio de lista). Bedrock del laboratorio:
   11,932 llamadas.
 

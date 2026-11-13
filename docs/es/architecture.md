@@ -14,7 +14,7 @@ SuperLeads opera en tres capas que comparten datos e infraestructura:
 ```mermaid
 flowchart LR
   subgraph Personas
-    V[Fundador / líder comercial<br/>WhatsApp, web]
+    V[Líder comercial<br/>WhatsApp, web]
     T[Equipo comercial]
     P[Prospectos<br/>y padres de familia]
   end

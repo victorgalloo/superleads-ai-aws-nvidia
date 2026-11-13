@@ -14,7 +14,7 @@ SuperLeads runs three layers that share data and infrastructure:
 ```mermaid
 flowchart LR
   subgraph People
-    V[Founder / sales lead<br/>WhatsApp, web]
+    V[Sales lead<br/>WhatsApp, web]
     T[Commercial team]
     P[Prospective students<br/>and parents]
   end

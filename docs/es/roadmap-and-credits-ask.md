@@ -43,7 +43,7 @@ flowchart LR
 
 **Laboratorio (1–8): ~$0.9k–2.1k USD. Piloto (9): ~$7k USD. Operación (10): ~$9.3k USD por 6 meses.**
 
-Los créditos de AWS que tenemos hoy (cerca de $9k USD según el fundador; el saldo no se pudo verificar desde el
+Los créditos de AWS que tenemos hoy (cerca de $9k USD de los $10k USD de créditos AWS Activate Portfolio que obtuvimos por NVIDIA Inception en oct 2026; saldo según el equipo, no se pudo verificar desde el
 servidor) cubren el agente de operaciones y los primeros experimentos. **El piloto y tener el modelo siempre encendido
 es lo que destraban más créditos.**
 
@@ -55,6 +55,12 @@ es lo que destraban más créditos.**
 - **NVIDIA (Inception):** capacidad de H100 o DGX Cloud para el experimento del maestro grande; NIM para servir; guía
   técnica sobre fine-tuning de Nemotron MoE, servir en NVFP4 y ASR en español; un caso de estudio conjunto cuando el
   piloto tenga resultados.
+
+## El siguiente nivel de créditos que pedimos
+
+AWS lista **AWS Credits for AI Startups** (US$200k+, solo por invitación, para startups listas para escalar después de
+Activate Portfolio) como el nivel que se gestiona con el Account Manager de AWS de la startup. Esa es la conversación que
+este repositorio respalda: el piloto (9) y seis meses de operación (10) son los usos concretos.
 
 ## Decisiones y dependencias (que no son dinero)
 

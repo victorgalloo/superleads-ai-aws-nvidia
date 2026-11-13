@@ -45,7 +45,7 @@ una escuela.
 
 - **95% de asistencia en un día completo de juntas.** En un día de juntas seguidas con directores de colegios y
   universidades (de 10:00 a 16:00), se llevó a cabo el 95% de las citas agendadas. Es un hito de un día, publicado por
-  el fundador, no un promedio sostenido. Él lo atribuyó a IA, automatizaciones y al equipo; entre las herramientas
+  el líder comercial, no un promedio sostenido. Él lo atribuyó a IA, automatizaciones y al equipo; entre las herramientas
   están el brief automático antes de cada junta, un motor de seguimiento que propone horarios reales y un agente
   siempre encendido.
 - **Cada junta de diagnóstico agendada recibe un brief de investigación** esa misma mañana, generado solo.
@@ -61,7 +61,7 @@ una escuela.
   investigación de alianzas y supervisión.
 - **Se supervisa solo**: tablero en vivo, reportes de rutinas cada 30 minutos, revisión diaria de las rutinas que
   fallan y bitácora diaria, para que un equipo chico opere lo que de otro modo requeriría varias personas.
-- El fundador le da instrucciones al agente con **notas de voz de WhatsApp**; contesta con texto o voz.
+- El líder comercial le da instrucciones al agente con **notas de voz de WhatsApp**; contesta con texto o voz.
 
 ## Por qué debería importarles a AWS y NVIDIA
 

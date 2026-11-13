@@ -43,7 +43,7 @@ Helper script on the server: `~/.hermes/scripts/showcase_aws_nvidia.py` (not par
    ```
    It re-runs the check, commits and pushes with the GitHub CLI credential helper. Never `--force`.
 
-6. **Report** to the founder in one short message: what was added, the commit hash, and anything that could not be
+6. **Report** to the sales lead in one short message: what was added, the commit hash, and anything that could not be
    verified.
 
 ## Rules

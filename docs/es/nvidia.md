@@ -47,8 +47,10 @@ Fable para entrenar otro modelo sin permiso por escrito), y el resultado es una 
 ## Cómo usamos Inception, y el plan
 
 **Usado hasta hoy:** la membresía y el posicionamiento («entrenado por SuperLeads sobre NVIDIA»); los modelos abiertos
-y los contenedores NGC de NVIDIA. **Todavía no usamos** beneficios propios de Inception como créditos de DGX Cloud o
-NIM, ni el soporte técnico de NVIDIA. Es cuenta honesta, no queja: primero había que tener resultados.
+y los contenedores NGC de NVIDIA; los **$10k USD en créditos AWS Activate Portfolio** del catálogo de beneficios de
+Inception (pedidos y aprobados en oct 2026; con ellos se financia el trabajo en AWS de este repositorio); 20 códigos de
+capacitación NVIDIA DLI. **Solicitado:** el piloto de $1,000 USD en créditos de Brev para miembros de Inception (nov
+2026). **Todavía no usamos** créditos de DGX Cloud ni NIM, ni el soporte técnico de NVIDIA. Es cuenta honesta, no queja: primero había que tener resultados.
 
 **Lo que le pediríamos a NVIDIA después:**
 

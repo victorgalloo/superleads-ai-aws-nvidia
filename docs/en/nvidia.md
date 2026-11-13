@@ -46,8 +46,10 @@ without written permission), and it makes the result an NVIDIA story end to end.
 ## How we use Inception, and the plan
 
 **Used so far:** membership and positioning ("trained by SuperLeads on NVIDIA"); NVIDIA's open models and NGC
-containers. We have **not yet drawn** Inception-specific benefits such as DGX Cloud credits or NIM, and we have not
-yet used NVIDIA technical support. This is honest accounting, not a complaint: we had to show results first.
+containers; the **US$10k AWS Activate Portfolio credits** offered through the Inception benefits catalog (requested and
+approved Oct 2026; they fund the AWS work in this repository); 20 NVIDIA DLI training codes. **Requested:** the
+US$1,000 Brev credits pilot for Inception members (Nov 2026). We have **not yet drawn** DGX Cloud credits or NIM, and
+we have not yet used NVIDIA technical support. This is honest accounting, not a complaint: we had to show results first.
 
 **What we would ask NVIDIA for next:**
 

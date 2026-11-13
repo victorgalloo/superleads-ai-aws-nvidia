@@ -41,7 +41,7 @@ flowchart LR
 
 **Research track (1–8): ~US$0.9k–2.1k. Pilot (9): ~US$7k. Operations (10): ~US$9.3k for 6 months.**
 
-Our current AWS credits (about US$9k, per the founder; balance not verified from the server) cover the operations
+Our current AWS credits (about US$9k left of the US$10k AWS Activate Portfolio credits obtained through NVIDIA Inception in Oct 2026; balance per the team, not verified from the server) cover the operations
 agent and the first experiments. **The pilot and always-on serving are what more credits unlock.**
 
 ## What more credits enable, concretely
@@ -51,6 +51,12 @@ agent and the first experiments. **The pilot and always-on serving are what more
   operations agent. If the pilot works, the same stack rolls out to more schools in Mexico and LATAM.
 - **NVIDIA (Inception):** H100 capacity or DGX Cloud for the larger-teacher experiment; NIM for serving; technical
   guidance on Nemotron MoE fine-tuning, NVFP4 serving and Spanish ASR; a joint case study once the pilot reports.
+
+## Next credit tier we are asking for
+
+AWS lists **AWS Credits for AI Startups** (US$200k+, invite only, for startups ready to scale after Activate Portfolio) as
+the tier that goes through the startup's AWS Account Manager. That is the conversation this repository supports: the
+pilot (9) and six months of operations (10) are the concrete uses.
 
 ## Decisions and dependencies (not money)
 

@@ -44,7 +44,7 @@ This is an offline exam, not production. The next step is a human-agreement chec
 
 - **95% attendance in a full day of meetings.** On a day with back-to-back meetings with school and university
   directors (10:00–16:00), 95% of booked meetings took place. It is a single-day milestone, publicly posted by the
-  founder, not a sustained average. He attributed it to AI, automations and the team; the tools involved include
+  sales lead, not a sustained average. He attributed it to AI, automations and the team; the tools involved include
   automated pre-meeting research briefs, a follow-up engine that proposes real calendar slots, and an always-on agent.
 - **Every booked diagnostic meeting gets a research brief** the same morning, generated automatically.
 - **Follow-up engine**: each salesperson opens one card with whom to write, why now, and a drafted message; the CRM is
@@ -58,7 +58,7 @@ This is an offline exam, not production. The next step is a human-agreement chec
   sales signals (new admissions directors, new programs, job posts), partnership research and supervision.
 - **Self-supervision**: a live dashboard, routine reports every 30 minutes, a daily review of failing routines and a
   daily work log, so a small team can run what would otherwise need several people.
-- The founder instructs the agent by **WhatsApp voice notes**; it answers by text or voice.
+- The sales lead instructs the agent by **WhatsApp voice notes**; it answers by text or voice.
 
 ## Why AWS and NVIDIA should care
 
