@@ -20,7 +20,7 @@ los créditos aplicados) los da la facturación de AWS.
 
 | Servicio | Región | Cómo lo usamos | Uso verificado |
 |---|---|---|---|
-| **Amazon EC2** | mx-central-1 | Un m7i.2xlarge (8 vCPU, 30 GiB, disco de 193 GB) corre el agente de operaciones Hermes 24/7: gateway de WhatsApp, agenda de rutinas, orquestadores de GPU, scripts de extracción y análisis | 1 instancia, siempre encendida. ~$294 USD al mes a precio de lista de us-east-1 (estimado; el precio en la región de México puede variar) |
+| **Amazon EC2** | mx-central-1 | Un m7i.2xlarge (8 vCPU, 30 GiB, disco de 193 GB) corre a Constanza, nuestro agente de operaciones (construido sobre Hermes Agent), 24/7: gateway de WhatsApp, agenda de rutinas, orquestadores de GPU, scripts de extracción y análisis | 1 instancia, siempre encendida. ~$294 USD al mes a precio de lista de us-east-1 (estimado; el precio en la región de México puede variar) |
 | **Amazon Bedrock** | us-east-1 (perfiles entre regiones y globales) | (a) Modelo del agente de operaciones: Claude Opus 5.5. (b) Jueces y candidatos de referencia del examen: Opus 4.7, Opus 5.5, Sonnet 5.5, Fable 5.1, Fable 5.2. (c) Investigación y redacción en el producto de prospección | Ver tablas abajo |
 | **Amazon SageMaker** (training jobs) | us-east-1 | Fine-tuning LoRA de Nemotron, unión de adaptadores e inferencia por lotes con vLLM para exámenes, maestro y fichas. Spot cuando se puede | 29 jobs, 24.8 h facturables, $299.51 |
 | **Amazon S3** | us-east-1 | Corpus anonimizado (particionado por cuenta seudónima y resultado), fichas, sets de entrenamiento, checkpoints LoRA, modelos unidos, salidas de jobs | 1 bucket, 1,432 objetos, ~193 GB |

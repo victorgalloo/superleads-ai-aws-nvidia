@@ -20,7 +20,7 @@ applied) come from AWS billing.
 
 | Service | Region | How we use it | Verified usage |
 |---|---|---|---|
-| **Amazon EC2** | mx-central-1 | One m7i.2xlarge (8 vCPU, 30 GiB, 193 GB root volume) runs the Hermes operations agent 24/7: WhatsApp gateway, scheduler, orchestrators for GPU jobs, extraction and analysis scripts | 1 instance, always on. ~US$294/month at us-east-1 list price (estimate; Mexico Region price may differ) |
+| **Amazon EC2** | mx-central-1 | One m7i.2xlarge (8 vCPU, 30 GiB, 193 GB root volume) runs Constanza, our operations agent (built on Hermes Agent), 24/7: WhatsApp gateway, scheduler, orchestrators for GPU jobs, extraction and analysis scripts | 1 instance, always on. ~US$294/month at us-east-1 list price (estimate; Mexico Region price may differ) |
 | **Amazon Bedrock** | us-east-1 (cross-region and global inference profiles) | (a) Model behind the operations agent: Claude Opus 5.5. (b) Judges and reference candidates for the admissions-AI exam: Opus 4.7, Opus 5.5, Sonnet 5.5, Fable 5.1, Fable 5.2. (c) Research and message drafting in the prospect-research product | See tables below |
 | **Amazon SageMaker** (training jobs) | us-east-1 | LoRA fine-tuning of Nemotron, merge of adapters, and batch inference with vLLM for exams, teacher generation and fact sheets. Managed spot where possible | 29 jobs, 24.8 billable h, $299.51 |
 | **Amazon S3** | us-east-1 | Anonymized corpus (partitioned by pseudonymous account and outcome), fact sheets, SFT sets, LoRA checkpoints, merged models, job outputs | 1 bucket, 1,432 objects, ~193 GB |

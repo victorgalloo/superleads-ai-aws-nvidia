@@ -26,6 +26,11 @@ Updated by a weekly routine of the operations agent (see `ROUTINE.md`).
 - Live progress page for the team with an idea box answered by the agent.
 - SageMaker: 29 jobs, 24.8 billable hours, $299.51 (estimate at list price). Bedrock research: 11,932 calls.
 
+**Narrative (13 Nov)**
+- **13 Nov:** the showcase now leads with SuperLeads' mission and growth story (~100 institutions, 100% bootstrapped,
+  people and admissions know-how), a "Growing together with AWS" section, Constanza (our AI and future admissions
+  harness) and calls as the next growth line (transcription, call analytics, voice agents; plan with estimates).
+
 **Operations agent**
 - Training watcher (every 15 min) with WhatsApp notices; Bedrock model-availability probe (every 3 h).
 - Agent dashboard renamed and moved behind single sign-on; instructions by text or voice note.

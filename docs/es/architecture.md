@@ -4,7 +4,7 @@
 
 SuperLeads opera en tres capas que comparten datos e infraestructura:
 
-1. **Un agente de operaciones siempre encendido** (Hermes) en Amazon EC2, con Claude Opus en Amazon Bedrock.
+1. **Constanza, nuestra IA siempre encendida** (agente de operaciones construido sobre el framework abierto Hermes Agent) en Amazon EC2, con Claude Opus en Amazon Bedrock.
 2. **Un laboratorio de IA de admisiones**: datos anonimizados del CRM en Amazon S3, jobs de GPU en Amazon SageMaker con
    NVIDIA Nemotron y un examen a ciegas calificado en Bedrock.
 3. **Productos** que usan el equipo comercial y las escuelas, casi todos en Cloudflare Workers, que llaman a modelos de IA.
@@ -20,7 +20,7 @@ flowchart LR
   end
 
   subgraph AWS_MX[AWS mx-central-1]
-    EC2[EC2 m7i.2xlarge<br/>Agente de operaciones Hermes<br/>gateway, agenda, skills, memoria]
+    EC2[EC2 m7i.2xlarge<br/>Constanza: agente de operaciones<br/>gateway, agenda, skills, memoria]
   end
 
   subgraph AWS_US[AWS us-east-1]
@@ -70,7 +70,11 @@ flowchart LR
   P -.->|futuro: respuestas del harness| CRM
 ```
 
-## 1. Agente de operaciones (Hermes en EC2)
+## 1. Constanza: agente de operaciones en EC2
+
+Constanza coordina un equipo de "empleados" de IA especializados (uno por red social, uno de SEO y sitios web, uno
+de clientes y alianzas), cada uno visible en el tablero de supervisión. El mismo harness del examen de admisiones es
+el que se planea como la capa de admisiones de Constanza para conversar con los aspirantes.
 
 | Pieza | Qué hace |
 |---|---|
@@ -123,8 +127,8 @@ Detalle: [Entrenamiento y evaluación](training-and-evaluation.md).
 | Brief antes de la junta | Para cada junta de diagnóstico agendada, investiga a la escuela y manda un brief el mismo día | Worker + cron cada 15 min | Claude |
 | Generador de video | Videos de marca en 2–3 minutos a partir de una idea; horizontal y vertical | Remotion / HyperFrames, D1 | Guion con LLM, voz ElevenLabs, video generativo |
 | Inicio de sesión único | Login de Google restringido por dominio, reutilizado por todas las herramientas | Cloudflare Pages Functions + D1 | — |
-| Tablero del agente | Estado en vivo del agente y sus rutinas; instrucciones por texto o voz | Worker + KV, detrás del login | Contesta Hermes |
-| Página del entrenamiento | Avance de la IA de admisiones en lenguaje llano, ejemplos, buzón de ideas | Worker + KV, detrás del login | Hermes contesta las ideas |
+| Tablero del agente | Estado en vivo del agente y sus rutinas; instrucciones por texto o voz | Worker + KV, detrás del login | Contesta Constanza |
+| Página del entrenamiento | Avance de la IA de admisiones en lenguaje llano, ejemplos, buzón de ideas | Worker + KV, detrás del login | Constanza contesta las ideas |
 
 ## Fronteras de datos
 

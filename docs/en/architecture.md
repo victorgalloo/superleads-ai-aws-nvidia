@@ -4,7 +4,7 @@
 
 SuperLeads runs three layers that share data and infrastructure:
 
-1. **An always-on operations agent** (Hermes) on Amazon EC2, driven by Claude Opus on Amazon Bedrock.
+1. **Constanza, our always-on AI** (operations agent built on the open-source Hermes Agent framework) on Amazon EC2, driven by Claude Opus on Amazon Bedrock.
 2. **An admissions-AI research stack**: anonymized CRM data in Amazon S3, GPU jobs on Amazon SageMaker with NVIDIA
    Nemotron, and a blind evaluation judged on Bedrock.
 3. **Products** used by the commercial team and by schools, mostly on Cloudflare Workers, calling AI models.
@@ -20,7 +20,7 @@ flowchart LR
   end
 
   subgraph AWS_MX[AWS mx-central-1]
-    EC2[EC2 m7i.2xlarge<br/>Hermes operations agent<br/>gateway, scheduler, skills, memory]
+    EC2[EC2 m7i.2xlarge<br/>Constanza: operations agent<br/>gateway, scheduler, skills, memory]
   end
 
   subgraph AWS_US[AWS us-east-1]
@@ -70,7 +70,11 @@ flowchart LR
   P -.->|future: harness replies| CRM
 ```
 
-## 1. Operations agent (Hermes on EC2)
+## 1. Constanza: operations agent on EC2
+
+Constanza coordinates a team of specialized AI "employees" (one per social network, one for SEO and websites, one
+for clients and partners), each visible on the supervisor dashboard. The same harness used in the admissions exam is
+planned as Constanza's admissions layer for conversations with prospective students.
 
 | Piece | What it does |
 |---|---|
@@ -123,8 +127,8 @@ Details: [Training and evaluation](training-and-evaluation.md).
 | Pre-meeting brief | For each booked diagnostic meeting, researches the school and emails a brief on meeting day | Worker + cron every 15 min | Claude |
 | AI video generator | Brand videos in 2–3 minutes from an idea; horizontal and vertical | Remotion / HyperFrames, D1 | LLM script, ElevenLabs voice, generative video |
 | Single sign-on | Google login restricted by domain, reused by every internal tool | Cloudflare Pages Functions + D1 | — |
-| Agent dashboard | Live state of the agent and its routines; send instructions by text or voice | Worker + KV, behind SSO | Hermes answers |
-| Training page | Plain-language progress of the admissions AI, examples, idea box | Worker + KV, behind SSO | Hermes answers ideas |
+| Agent dashboard | Live state of the agent and its routines; send instructions by text or voice | Worker + KV, behind SSO | Constanza answers |
+| Training page | Plain-language progress of the admissions AI, examples, idea box | Worker + KV, behind SSO | Constanza answers ideas |
 
 ## Data boundaries
 

@@ -27,6 +27,12 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 - SageMaker: 29 jobs, 24.8 horas facturables, $299.51 USD (estimado a precio de lista). Bedrock del laboratorio:
   11,932 llamadas.
 
+**Narrativa (13-nov)**
+- **13-nov:** la vitrina ahora abre con la misión y la historia de crecimiento de SuperLeads (~100 instituciones, 100%
+  bootstrapped, gente y know-how en admisiones), una sección «Crecer junto con AWS», Constanza (nuestra IA y futuro
+  harness de admisiones) y las llamadas como siguiente línea de crecimiento (transcripción, analítica, agentes de voz;
+  plan con estimaciones).
+
 **Agente de operaciones**
 - Vigía del entrenamiento (cada 15 min) con avisos por WhatsApp; sonda de disponibilidad de modelos en Bedrock (cada 3 h).
 - El tablero del agente cambió de nombre y quedó detrás del inicio de sesión único; instrucciones por texto o nota de voz.
