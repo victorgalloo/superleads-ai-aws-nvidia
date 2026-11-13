@@ -17,7 +17,7 @@ and to open the calls line.
 
 | Track | AWS services | Today (measured) | Next stage (plan) | What drives growth |
 |---|---|---|---|---|
-| **Constanza, operations** | Bedrock (Claude), EC2 mx-central-1 | 50 active routines, a team of specialized AI "employees", ~14,400 model calls since Oct 2026 | 6 more months (~US$9.3k, est.) | More channels, routines and team members |
+| **Constanza, operations** | Bedrock (Claude), EC2 mx-central-1 | 54 active routines, a team of specialized AI "employees", ~15,600 model calls since Oct 2026 | 6 more months (~US$9.3k, est.) | More channels, routines and team members |
 | **Constanza, admissions conversations** | Bedrock (harness, hard turns), SageMaker endpoint (Nemotron) | Offline exam: 8.2 (Claude Fable 5.2 + harness), 6.7 (our Nemotron v5 + harness) | One-school pilot (~US$7k, est.) | Each institution's prospect volume |
 | **Our own model** | SageMaker GPUs, S3, ECR | 29 jobs, 24.8 h, $299.51; ~193 GB in S3 | Research track (~US$0.9k–2.1k, est.); larger Nemotron on H100 | Model quality and serving cost per conversation |
 | **Calls** | Amazon Transcribe or NVIDIA ASR on GPU; Bedrock for analytics | 208,751 call records, 621 h > 30 s, none transcribed | Transcribe the backlog, call analytics, voice-agent pilot (~US$0.1k–1.05k, est., plus pilot actuals) | Hours of calls per institution |

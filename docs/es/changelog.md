@@ -25,7 +25,7 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 - Citas reales: 354,602 leads en 101 escuelas; agenda el 2.8%.
 - Página en vivo del avance para el equipo, con buzón de ideas que contesta el agente.
 - SageMaker: 29 jobs, 24.8 horas facturables, $299.51 USD (estimado a precio de lista). Bedrock del laboratorio:
-  11,932 llamadas.
+  11,957 llamadas.
 
 **Narrativa (13-nov)**
 - **13-nov:** la vitrina ahora abre con la misión y la historia de crecimiento de SuperLeads (~100 instituciones, 100%
@@ -37,6 +37,21 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 - Vigía del entrenamiento (cada 15 min) con avisos por WhatsApp; sonda de disponibilidad de modelos en Bedrock (cada 3 h).
 - El tablero del agente cambió de nombre y quedó detrás del inicio de sesión único; instrucciones por texto o nota de voz.
 - Se creó la rutina semanal de esta vitrina (este repositorio).
+- Cuatro rutinas nuevas (ya son 71 definidas, 54 activas): respuestas a comentarios en nuestros perfiles sociales tres
+  veces al día, seguimiento con nuestro equipo de cuenta de AWS antes de la reunión del 20-nov, una publicación
+  programada que anuncia esta vitrina (17-nov) y esta actualización semanal.
+- Semana en Bedrock: 444 sesiones, 8,941 llamadas al modelo, ~$468 USD a precio de lista (estimación del propio agente).
+
+**Productos**
+- El inicio de sesión único ya cubre cinco apps internas: tablero del agente, página de avance del entrenamiento, el
+  diagnóstico Rayos X de inscripciones, una bitácora y una app de contexto compartido.
+- Sitio web: el caché en el borde quitó esperas de hasta 3.8 s en la primera carga de las páginas alojadas en el CRM;
+  16 páginas débiles se unieron a su página principal; guías nuevas de admisiones y una sección de 20 preguntas
+  escrita para respuestas de IA.
+- Propuestas: revisión de salud del dominio remitente y reintentos ante el límite de envío de correo; cada propuesta
+  tiene un asesor asignado que se entera del envío, la apertura y la firma.
+- El producto de investigación de prospectos, el anonimizador del censo del CRM y el arnés de entrenamiento entraron a
+  control de versiones (solo código; los datos quedan fuera).
 
 ## Semana del 2 al 6 de noviembre de 2026
 

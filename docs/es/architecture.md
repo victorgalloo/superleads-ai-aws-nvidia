@@ -82,7 +82,7 @@ el que se planea como la capa de admisiones de Constanza para conversar con los 
 | Modelo | Claude Opus 5.5 en Bedrock (perfil entre regiones de us-east-1); Claude Fable 5.2 en algunas rutinas |
 | Canales | WhatsApp (texto y notas de voz), un tablero web, resúmenes por correo |
 | Voz | Texto a voz con ElevenLabs para contestar con audio |
-| Agenda | 67 rutinas programadas definidas, 50 activas; 14 son solo script (no llaman a un modelo) |
+| Agenda | 71 rutinas programadas definidas, 54 activas; 14 son solo script (no llaman a un modelo) |
 | Memoria y skills | Memoria persistente y «skills» de procedimiento que el agente mejora después de cada trabajo |
 
 **Qué hacen las rutinas (agrupadas, sin nombres de clientes):**

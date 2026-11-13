@@ -45,7 +45,7 @@ Bedrock, built on the open-source Hermes Agent framework.
 
 - **A team of specialized AI "employees"** under her coordination: one per social network, one for SEO and websites,
   one for clients and partners. All are visible on our supervisor dashboard.
-- **50 enabled scheduled routines** (67 defined) on one EC2 server: daily content per social network, technical SEO
+- **54 enabled scheduled routines** (71 defined) on one EC2 server: daily content per social network, technical SEO
   audits, an SEO autopilot for two sites, a weekly check of how AI assistants answer questions about our market,
   public-data sales signals (new admissions directors, new programs, job posts), partnership research and supervision.
 - **Self-supervision**: a live dashboard, routine reports every 30 minutes, a daily review of failing routines and a

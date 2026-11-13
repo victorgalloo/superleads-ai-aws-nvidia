@@ -24,7 +24,7 @@ Updated by a weekly routine of the operations agent (see `ROUTINE.md`).
   2.4× more bookings within the same school.
 - Appointment ground truth: 354,602 leads in 101 schools, 2.8% book a visit.
 - Live progress page for the team with an idea box answered by the agent.
-- SageMaker: 29 jobs, 24.8 billable hours, $299.51 (estimate at list price). Bedrock research: 11,932 calls.
+- SageMaker: 29 jobs, 24.8 billable hours, $299.51 (estimate at list price). Bedrock research: 11,957 calls.
 
 **Narrative (13 Nov)**
 - **13 Nov:** the showcase now leads with SuperLeads' mission and growth story (~100 institutions, 100% bootstrapped,
@@ -35,6 +35,20 @@ Updated by a weekly routine of the operations agent (see `ROUTINE.md`).
 - Training watcher (every 15 min) with WhatsApp notices; Bedrock model-availability probe (every 3 h).
 - Agent dashboard renamed and moved behind single sign-on; instructions by text or voice note.
 - Weekly showcase routine created (this repository).
+- Four new routines (now 71 defined, 54 enabled): replies to comments on our social profiles three times a day,
+  follow-up with our AWS account team before the 20 Nov meeting, a scheduled post announcing this showcase (17 Nov)
+  and this weekly update.
+- Week on Bedrock: 444 sessions, 8,941 model calls, ~US$468 at list price (agent's own estimate).
+
+**Products**
+- Single sign-on now covers five internal apps: agent dashboard, training-progress page, the enrollment X-ray
+  diagnostic, a work log and a shared-context app.
+- Website: edge caching removed first-load waits of up to 3.8 s on CRM-hosted pages; 16 weak pages merged into their
+  main page; new admissions guides and a 20-question FAQ section written for AI answers.
+- Proposals: sender-domain health check and retries on email rate limits; each proposal has an assigned advisor who is
+  notified on send, open and signature.
+- The prospect-research product, the CRM census anonymizer and the training harness moved into version control (code
+  only; data stays out).
 
 ## Week of 2–6 Nov 2026
 

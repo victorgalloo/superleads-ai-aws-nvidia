@@ -53,8 +53,8 @@ waits too long for capacity, so it cannot bill later.
 | Claude Opus 5.5 | 3,955 | 16.3M | 1.84M | Judge 2 |
 | Claude Sonnet 5.5 | 1,497 | 4.8M | 0.65M | Reference candidate; labelled 296 conversations |
 | Claude Fable 5.1 | 449 | 5.3M | 0.34M | Fact sheets for analysis; reference candidate |
-| Claude Fable 5.2 | 329 | 2.1M | 0.26M | Strongest reference candidate |
-| **Total** | **11,932** | **52.9M** | **3.79M** | |
+| Claude Fable 5.2 | 354 | 2.3M | 0.35M | Strongest reference candidate |
+| **Total** | **11,957** | **53.1M** | **3.87M** | |
 
 Estimated at list price, the Opus and Sonnet share is about US$265 (Fable excluded for lack of a confirmed price); the
 judge-2 pass alone is about US$100.
@@ -66,10 +66,10 @@ its history was merged).
 
 | Month | Bedrock-billed sessions | Model calls | Estimated cost (agent's own accounting, list price) |
 |---|---|---|---|
-| Oct 2026 | 37 | 4,077 | $451 |
-| Nov 2026 (to the 13th) | 491 | 10,293 | $539 |
+| Oct 2026 | 37 | 4,303 | $482 |
+| Nov 2026 (to the 13th) | 533 | 11,273 | $596 |
 
-Prompt caching does most of the work: ~2.0 billion cached input tokens read vs ~2.4 million uncached. In the same
+Prompt caching does most of the work: ~2.2 billion cached input tokens read vs ~2.4 million uncached. In the same
 period the scheduler logged ~7,300 runs that made no model call (script-only routines).
 
 ## What we could not verify

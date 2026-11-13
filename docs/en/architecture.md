@@ -82,7 +82,7 @@ planned as Constanza's admissions layer for conversations with prospective stude
 | Model | Claude Opus 5.5 on Bedrock (us-east-1 cross-region profile); Claude Fable 5.2 for some jobs |
 | Channels | WhatsApp (text and voice notes), a web dashboard, email digests |
 | Voice | ElevenLabs text-to-speech for voice replies |
-| Scheduler | 67 scheduled routines defined, 50 enabled; 14 of them are script-only (no model call) |
+| Scheduler | 71 scheduled routines defined, 54 enabled; 14 of them are script-only (no model call) |
 | Memory and skills | Persistent memory plus procedural "skills" that the agent updates after each job |
 
 **What the routines do (grouped, no client names):**

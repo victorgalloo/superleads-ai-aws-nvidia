@@ -160,7 +160,7 @@ Los dos jueces ordenan los sistemas casi igual.
 | de eso, entrenamiento LoRA | $259.17 (19.8 h), incluye $116 del enfoque v3 que no sirvió | igual |
 | de eso, inferencia por lotes (exámenes, maestro, fichas) | $38.71 | igual |
 | de eso, uniones (CPU) | $1.64 | igual |
-| Bedrock (jueces y modelos de referencia) | 11,932 llamadas; 52.9M tokens de entrada, 3.8M de salida | Registro de tokens por llamada |
+| Bedrock (jueces y modelos de referencia) | 11,957 llamadas; 53.1M tokens de entrada, 3.9M de salida | Registro de tokens por llamada |
 | Bedrock, pasada del juez 2 (13 sistemas × 300) | ~$100 USD (estimado a precio de lista) | Registro × precio de lista |
 
 El tope interno de GPU de esta fase ($300) está agotado; los 29 jobs están en estado final (terminado, detenido o

@@ -158,7 +158,7 @@ systems in nearly the same order.
 | of which LoRA training | $259.17 (19.8 h), incl. $116 for the failed v3 approach | same |
 | of which batch inference (exams, teacher, fact sheets) | $38.71 | same |
 | of which merges (CPU) | $1.64 | same |
-| Bedrock (judges and reference models) | 11,932 calls; 52.9M input, 3.8M output tokens | Per-call token log |
+| Bedrock (judges and reference models) | 11,957 calls; 53.1M input, 3.9M output tokens | Per-call token log |
 | Bedrock, judge-2 pass (13 systems × 300) | ~US$100 (estimate at list price) | Token log × list price |
 
 The internal GPU cap for this phase ($300) is spent; all 29 jobs are in a final state (completed, stopped or failed).

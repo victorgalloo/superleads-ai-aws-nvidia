@@ -18,7 +18,7 @@ monto real.
 
 | Línea | Servicios de AWS | Hoy (medido) | Siguiente etapa (plan) | Qué la hace crecer |
 |---|---|---|---|---|
-| **Constanza, operación** | Bedrock (Claude), EC2 mx-central-1 | 50 rutinas activas, un equipo de "empleados" de IA especializados, ~14,400 llamadas al modelo desde oct-2026 | 6 meses más (~$9.3k USD, est.) | Más canales, rutinas y personas en el equipo |
+| **Constanza, operación** | Bedrock (Claude), EC2 mx-central-1 | 54 rutinas activas, un equipo de "empleados" de IA especializados, ~15,600 llamadas al modelo desde oct-2026 | 6 meses más (~$9.3k USD, est.) | Más canales, rutinas y personas en el equipo |
 | **Constanza, conversaciones de admisiones** | Bedrock (harness, turnos difíciles), endpoint de SageMaker (Nemotron) | Examen sin conexión: 8.2 (Claude Fable 5.2 + harness), 6.7 (nuestro Nemotron v5 + harness) | Piloto en una escuela (~$7k USD, est.) | El volumen de prospectos de cada institución |
 | **Nuestro propio modelo** | GPU de SageMaker, S3, ECR | 29 jobs, 24.8 h, $299.51 USD; ~193 GB en S3 | Laboratorio (~$0.9k–2.1k USD, est.); Nemotron más grande en H100 | Calidad del modelo y costo de servir por conversación |
 | **Llamadas** | Amazon Transcribe o ASR de NVIDIA en GPU; Bedrock para la analítica | 208,751 registros de llamadas, 621 h de más de 30 s, ninguna transcrita | Transcribir el acumulado, analítica de llamadas, piloto de agente de voz (~$0.1k–1.05k USD, est., más lo real del piloto) | Horas de llamadas por institución |

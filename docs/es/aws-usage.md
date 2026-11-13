@@ -53,8 +53,8 @@ espere demasiado por capacidad, para que no cobre después.
 | Claude Opus 5.5 | 3,955 | 16.3M | 1.84M | Juez 2 |
 | Claude Sonnet 5.5 | 1,497 | 4.8M | 0.65M | Candidato de referencia; etiquetó 296 conversaciones |
 | Claude Fable 5.1 | 449 | 5.3M | 0.34M | Fichas para análisis; candidato de referencia |
-| Claude Fable 5.2 | 329 | 2.1M | 0.26M | El candidato de referencia más fuerte |
-| **Total** | **11,932** | **52.9M** | **3.79M** | |
+| Claude Fable 5.2 | 354 | 2.3M | 0.35M | El candidato de referencia más fuerte |
+| **Total** | **11,957** | **53.1M** | **3.87M** | |
 
 A precio de lista, la parte de Opus y Sonnet ronda $265 USD (sin Fable, porque no tenemos su precio confirmado); solo
 la pasada del juez 2 ronda $100 USD.
@@ -66,10 +66,10 @@ su historia se unió).
 
 | Mes | Sesiones cobradas por Bedrock | Llamadas al modelo | Costo estimado (cuenta del propio agente, precio de lista) |
 |---|---|---|---|
-| Oct 2026 | 37 | 4,077 | $451 |
-| Nov 2026 (al día 13) | 491 | 10,293 | $539 |
+| Oct 2026 | 37 | 4,303 | $482 |
+| Nov 2026 (al día 13) | 533 | 11,273 | $596 |
 
-El caché de prompts hace casi todo el trabajo: ~2,000 millones de tokens de entrada leídos de caché contra ~2.4
+El caché de prompts hace casi todo el trabajo: ~2,200 millones de tokens de entrada leídos de caché contra ~2.4
 millones sin caché. En el mismo periodo la agenda registró ~7,300 corridas que no llamaron a ningún modelo (rutinas
 de solo script).
 

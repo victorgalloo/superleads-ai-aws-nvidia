@@ -46,7 +46,7 @@ Amazon Bedrock, construida sobre el framework abierto Hermes Agent.
 
 - **Un equipo de "empleados" de IA especializados** que ella coordina: uno por red social, uno de SEO y sitios web,
   uno de clientes y alianzas. Todos se ven en nuestro tablero de supervisión.
-- **50 rutinas programadas activas** (67 definidas) en un solo servidor EC2: contenido diario por red social,
+- **54 rutinas programadas activas** (71 definidas) en un solo servidor EC2: contenido diario por red social,
   auditorías técnicas de SEO, piloto automático de SEO para dos sitios, revisión semanal de cómo responden los
   asistentes de IA sobre nuestro mercado, señales comerciales de datos públicos (directores de admisiones nuevos,
   programas nuevos, vacantes), investigación de alianzas y supervisión.

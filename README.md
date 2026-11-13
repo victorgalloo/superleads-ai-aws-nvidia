@@ -34,7 +34,7 @@ going from ~100 institutions to several times that adds cloud workload, not head
 
 | Workload | AWS service | Today (measured) | As we grow (plan; costs are estimates) |
 |---|---|---|---|
-| Constanza, operations | Bedrock (Claude) + EC2 mx-central-1 | ~14,400 model calls since Oct; 50 active routines | More routines and channels; ~US$9.3k for the next 6 months |
+| Constanza, operations | Bedrock (Claude) + EC2 mx-central-1 | ~15,600 model calls since Oct; 54 active routines | More routines and channels; ~US$9.3k for the next 6 months |
 | Constanza, admissions conversations | Bedrock (harness) + SageMaker endpoint | Offline exam only: 8.2 / 10 vs 4.2 for today's AI | One-school pilot ~US$7k for 3 months, then institution by institution |
 | Our own model | SageMaker GPUs (L40S, H100) + S3 | 29 jobs, 24.8 h, ~193 GB in S3 | Next research track ~US$0.9k–2.1k; larger Nemotron on H100 |
 | Calls | Amazon Transcribe or NVIDIA ASR on GPU | 621 h of calls in the CRM, none transcribed yet | ~US$60 (GPU) to ~US$900 (Transcribe) for the backlog; grows with each institution |
@@ -49,7 +49,7 @@ framework and running 24/7 on EC2 (mx-central-1) with Claude on Bedrock.
 
 - **Coordinates a team of specialized AI "employees"**: one per social network, one for SEO and websites, one for
   clients and partners. Each one is visible on our supervisor dashboard, with its routines, reports and failures.
-- **Runs ~50 active routines** (67 defined): daily content, technical SEO, AI-answer visibility, public sales signals,
+- **Runs ~54 active routines** (71 defined): daily content, technical SEO, AI-answer visibility, public sales signals,
   partnership research, training watchers and self-supervision.
 - **Takes instructions by WhatsApp voice notes** and answers by text or voice.
 
@@ -112,11 +112,11 @@ caveats: [Training and evaluation](docs/en/training-and-evaluation.md).
 | Item | Value |
 |---|---|
 | SageMaker GPU jobs (us-east-1) | 29 jobs, 24.8 billable instance-hours, **$299.51** (estimated at list price; internal cap $300) |
-| Bedrock calls for the evaluation harness | 11,932 calls, 52.9M input / 3.8M output tokens |
-| Bedrock use by Constanza (since Oct 2026) | ~14,400 model calls, ~$990 at list price (agent's own estimate) |
+| Bedrock calls for the evaluation harness | 11,957 calls, 53.1M input / 3.9M output tokens |
+| Bedrock use by Constanza (since Oct 2026) | ~15,600 model calls, ~$1,080 at list price (agent's own estimate) |
 | Training corpus in S3 | 1 bucket, 1,432 objects, ~193 GB (anonymized data, checkpoints, outputs) |
 | Always-on server | 1× EC2 m7i.2xlarge, mx-central-1 (Mexico) |
-| Scheduled routines | 67 defined, 50 enabled |
+| Scheduled routines | 71 defined, 54 enabled |
 
 How each number was obtained, and what we could **not** verify (Cost Explorer is not readable from the server role),
 is in [AWS usage](docs/en/aws-usage.md).
