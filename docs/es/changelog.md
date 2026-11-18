@@ -5,6 +5,11 @@
 Registro semanal del trabajo nuevo en AWS y NVIDIA. Lo más nuevo arriba. Los números salen de nuestros registros; lo
 estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ver `ROUTINE.md`).
 
+## Semana del 16 al 20 de noviembre de 2026
+
+**Visibilidad**
+- **18-nov:** Publicado el caso en LinkedIn (en X desde el 17-nov).
+
 ## Semana del 9 al 13 de noviembre de 2026
 
 **Créditos y programas**

@@ -5,6 +5,11 @@
 Weekly log of new work done on AWS and NVIDIA. Newest first. Numbers come from our own logs; estimates are marked.
 Updated by a weekly routine of the operations agent (see `ROUTINE.md`).
 
+## Week of 16–20 Nov 2026
+
+**Visibility**
+- **18 Nov:** published the case on LinkedIn (on X since 17 Nov).
+
 ## Week of 9–13 Nov 2026
 
 **Credits and programs**
