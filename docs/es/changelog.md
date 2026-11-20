@@ -7,6 +7,27 @@ estimado se marca. Lo actualiza una rutina semanal del agente de operaciones (ve
 
 ## Semana del 16 al 20 de noviembre de 2026
 
+**IA de admisiones (NVIDIA + AWS)**
+- Laboratorio de datos sintéticos: un mapa de 76 valores en 9 ejes (nivel, quién escribe, momento, qué pide…) más 34
+  situaciones especiales, contrastado con 86,680 pláticas reales de 96 escuelas (solo conteos).
+- Vuelta s1 en 1× NVIDIA L40S (SageMaker spot, $2.31 USD): 600 pláticas simuladas, 37.3% calificadas como buenas;
+  las fallas principales son insistir, contestar demasiado largo y ofrecer la visita a quien no es prospecto. Set de
+  entrenamiento lab-s1: 1,644 ejemplos, 27% sintético. La vuelta s2 seguía corriendo al publicar.
+- Análisis nuevos de pláticas reales, solo conteos: qué aperturas y seguimientos reciben respuesta, patrones de
+  precios y dónde se pierden las pláticas, al día con una extracción diaria en el servidor.
+- Primer ensayo de voz en vivo con Constanza desde el tablero del equipo.
+- SageMaker acumulado: 31 jobs, 25.6 horas facturables, $301.82 USD (estimado a precio de lista).
+
+**Agente de operaciones**
+- Nuestro motor comercial ya llama a Claude por Amazon Bedrock (créditos de AWS), con la API directa de respaldo y
+  registro de por dónde salió cada llamada.
+- Agente de prospección: prueba A/B de un modo que ejecuta código, en 20 instituciones: +19% de personas verificadas
+  y -47% de costo por persona verificada.
+- Constanza en Bedrock esta semana: ~16,700 llamadas al modelo (estimado ~$930 USD a precio de lista); desde octubre,
+  ~33,500 llamadas.
+- Rutinas: 125 definidas, 97 activas.
+- Tres pull requests públicos al proyecto abierto Hermes Agent (arreglos del gateway y de texto a voz).
+
 **Visibilidad**
 - **18-nov:** Publicado el caso en LinkedIn (en X desde el 17-nov).
 

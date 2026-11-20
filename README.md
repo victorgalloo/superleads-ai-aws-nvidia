@@ -25,7 +25,7 @@ It contains **documentation only**: no source code, no customer data, no credent
 **What we built on credits so far (Oct–Nov 2026):**
 
 - **Constanza, our AI, live 24/7** on Amazon EC2 in **mx-central-1 (Mexico)** with Claude on **Amazon Bedrock**.
-- **Our own admissions model**: NVIDIA Nemotron fine-tuned on **Amazon SageMaker** GPUs (29 jobs, $299.51 at list
+- **Our own admissions model**: NVIDIA Nemotron fine-tuned on **Amazon SageMaker** GPUs (31 jobs, $301.82 at list
   price), from an anonymized corpus of 1.3M messages in **Amazon S3**.
 - **A blind exam** of 300 real prospect messages, judged on Bedrock, that tells us which system to trust with a school.
 
@@ -34,9 +34,9 @@ going from ~100 institutions to several times that adds cloud workload, not head
 
 | Workload | AWS service | Today (measured) | As we grow (plan; costs are estimates) |
 |---|---|---|---|
-| Constanza, operations | Bedrock (Claude) + EC2 mx-central-1 | ~15,600 model calls since Oct; 54 active routines | More routines and channels; ~US$9.3k for the next 6 months |
+| Constanza, operations | Bedrock (Claude) + EC2 mx-central-1 | ~33,500 model calls since Oct; 97 active routines | More routines and channels; ~US$9.3k for the next 6 months |
 | Constanza, admissions conversations | Bedrock (harness) + SageMaker endpoint | Offline exam only: 8.2 / 10 vs 4.2 for today's AI | One-school pilot ~US$7k for 3 months, then institution by institution |
-| Our own model | SageMaker GPUs (L40S, H100) + S3 | 29 jobs, 24.8 h, ~193 GB in S3 | Next research track ~US$0.9k–2.1k; larger Nemotron on H100 |
+| Our own model | SageMaker GPUs (L40S, H100) + S3 | 31 jobs, 25.6 h, ~205 GB in S3 | Next research track ~US$0.9k–2.1k; larger Nemotron on H100 |
 | Calls | Amazon Transcribe or NVIDIA ASR on GPU | 621 h of calls in the CRM, none transcribed yet | ~US$60 (GPU) to ~US$900 (Transcribe) for the backlog; grows with each institution |
 
 Region matters: Constanza already runs in **mx-central-1**, and we want to be a reference case for it.
@@ -49,7 +49,7 @@ framework and running 24/7 on EC2 (mx-central-1) with Claude on Bedrock.
 
 - **Coordinates a team of specialized AI "employees"**: one per social network, one for SEO and websites, one for
   clients and partners. Each one is visible on our supervisor dashboard, with its routines, reports and failures.
-- **Runs ~54 active routines** (71 defined): daily content, technical SEO, AI-answer visibility, public sales signals,
+- **Runs ~97 active routines** (125 defined): daily content, technical SEO, AI-answer visibility, public sales signals,
   partnership research, training watchers and self-supervision.
 - **Takes instructions by WhatsApp voice notes** and answers by text or voice.
 
@@ -111,12 +111,12 @@ caveats: [Training and evaluation](docs/en/training-and-evaluation.md).
 
 | Item | Value |
 |---|---|
-| SageMaker GPU jobs (us-east-1) | 29 jobs, 24.8 billable instance-hours, **$299.51** (estimated at list price; internal cap $300) |
+| SageMaker GPU jobs (us-east-1) | 31 jobs, 25.6 billable instance-hours, **$301.82** (estimated at list price; first-phase cap $300 reached, the synthetic-data lab runs on 1× L40S spot) |
 | Bedrock calls for the evaluation harness | 11,957 calls, 53.1M input / 3.9M output tokens |
-| Bedrock use by Constanza (since Oct 2026) | ~15,600 model calls, ~$1,080 at list price (agent's own estimate) |
-| Training corpus in S3 | 1 bucket, 1,432 objects, ~193 GB (anonymized data, checkpoints, outputs) |
+| Bedrock use by Constanza (since Oct 2026) | ~33,500 model calls, ~$2,310 at list price (agent's own estimate) |
+| Training corpus in S3 | 1 bucket, 3,273 objects, ~205 GB (anonymized data, checkpoints, outputs) |
 | Always-on server | 1× EC2 m7i.2xlarge, mx-central-1 (Mexico) |
-| Scheduled routines | 71 defined, 54 enabled |
+| Scheduled routines | 125 defined, 97 enabled |
 
 How each number was obtained, and what we could **not** verify (Cost Explorer is not readable from the server role),
 is in [AWS usage](docs/en/aws-usage.md).

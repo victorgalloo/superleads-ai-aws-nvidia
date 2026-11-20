@@ -7,6 +7,26 @@ Updated by a weekly routine of the operations agent (see `ROUTINE.md`).
 
 ## Week of 16–20 Nov 2026
 
+**Admissions AI (NVIDIA + AWS)**
+- Synthetic-data lab: a map of 76 values on 9 axes (level, who writes, moment, what they ask…) plus 34 special
+  situations, checked against 86,680 real conversations from 96 schools (counts only).
+- Round s1 on 1× NVIDIA L40S (SageMaker spot, $2.31): 600 simulated conversations, 37.3% judged good; the main
+  failures are insisting, overly long answers and offering a visit to someone who is not a prospect. Training set
+  lab-s1: 1,644 examples, 27% synthetic. Round s2 was running at publication time.
+- New counts-only analyses of real conversations: which openings and follow-ups get a reply, pricing patterns and
+  where conversations are lost, refreshed by a daily extraction on the server.
+- First live voice rehearsal with Constanza from the team dashboard.
+- SageMaker total: 31 jobs, 25.6 billable hours, $301.82 (estimate at list price).
+
+**Operations agent**
+- Our commercial engine now calls Claude through Amazon Bedrock (AWS credits), with a direct-API fallback and a log
+  of which route each call took.
+- Prospecting agent: A/B test of a code-execution mode on 20 institutions, +19% verified people and -47% cost per
+  verified person.
+- Constanza on Bedrock this week: ~16,700 model calls (estimate ~$930 at list price); since October ~33,500 calls.
+- Routines: 125 defined, 97 enabled.
+- Three public pull requests to the open-source Hermes Agent (gateway and text-to-speech fixes).
+
 **Visibility**
 - **18 Nov:** published the case on LinkedIn (on X since 17 Nov).
 

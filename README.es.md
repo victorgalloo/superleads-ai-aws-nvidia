@@ -25,8 +25,8 @@ Contiene **solo documentación**: nada de código, nada de datos de clientes, ni
 **Lo que construimos con los créditos hasta hoy (oct–nov 2026):**
 
 - **Constanza, nuestra IA, encendida 24/7** en Amazon EC2 en **mx-central-1 (México)** con Claude en **Amazon Bedrock**.
-- **Nuestro propio modelo de admisiones**: NVIDIA Nemotron entrenado con GPU de **Amazon SageMaker** (29 jobs,
-  $299.51 USD a precio de lista), a partir de un corpus anonimizado de 1.3M mensajes en **Amazon S3**.
+- **Nuestro propio modelo de admisiones**: NVIDIA Nemotron entrenado con GPU de **Amazon SageMaker** (31 jobs,
+  $301.82 USD a precio de lista), a partir de un corpus anonimizado de 1.3M mensajes en **Amazon S3**.
 - **Un examen a ciegas** de 300 mensajes reales de prospectos, calificado en Bedrock, que nos dice a qué sistema
   confiarle una escuela.
 
@@ -35,9 +35,9 @@ que pasar de ~100 instituciones a varias veces eso sume carga en la nube, no per
 
 | Carga | Servicio de AWS | Hoy (medido) | Al crecer (plan; los costos son estimaciones) |
 |---|---|---|---|
-| Constanza, operación | Bedrock (Claude) + EC2 mx-central-1 | ~15,600 llamadas al modelo desde oct; 54 rutinas activas | Más rutinas y canales; ~$9.3k USD los próximos 6 meses |
+| Constanza, operación | Bedrock (Claude) + EC2 mx-central-1 | ~33,500 llamadas al modelo desde oct; 97 rutinas activas | Más rutinas y canales; ~$9.3k USD los próximos 6 meses |
 | Constanza, conversaciones de admisiones | Bedrock (harness) + endpoint de SageMaker | Solo examen sin conexión: 8.2 / 10 contra 4.2 de la IA de hoy | Piloto en una escuela ~$7k USD por 3 meses, luego institución por institución |
-| Nuestro propio modelo | GPU de SageMaker (L40S, H100) + S3 | 29 jobs, 24.8 h, ~193 GB en S3 | Siguiente fase del laboratorio ~$0.9k–2.1k USD; Nemotron más grande en H100 |
+| Nuestro propio modelo | GPU de SageMaker (L40S, H100) + S3 | 31 jobs, 25.6 h, ~205 GB en S3 | Siguiente fase del laboratorio ~$0.9k–2.1k USD; Nemotron más grande en H100 |
 | Llamadas | Amazon Transcribe o ASR de NVIDIA en GPU | 621 h de llamadas en el CRM, ninguna transcrita | ~$60 USD (GPU) a ~$900 USD (Transcribe) por el acumulado; crece con cada institución |
 
 La región importa: Constanza ya corre en **mx-central-1** y queremos ser un caso de referencia para ella.
@@ -50,7 +50,7 @@ Hermes Agent y encendido 24/7 en EC2 (mx-central-1) con Claude en Bedrock.
 
 - **Coordina un equipo de "empleados" de IA especializados**: uno por red social, uno de SEO y sitios web, uno de
   clientes y alianzas. Cada uno se ve en nuestro tablero de supervisión, con sus rutinas, reportes y fallas.
-- **Corre ~54 rutinas activas** (71 definidas): contenido diario, SEO técnico, visibilidad en respuestas de IA, señales
+- **Corre ~97 rutinas activas** (125 definidas): contenido diario, SEO técnico, visibilidad en respuestas de IA, señales
   comerciales públicas, investigación de alianzas, vigías del entrenamiento y autosupervisión.
 - **Recibe instrucciones por notas de voz de WhatsApp** y contesta con texto o voz.
 
@@ -114,12 +114,12 @@ Metodología y advertencias completas: [Entrenamiento y evaluación](docs/es/tra
 
 | Concepto | Valor |
 |---|---|
-| Jobs de GPU en SageMaker (us-east-1) | 29 jobs, 24.8 horas facturables, **$299.51 USD** (estimado a precio de lista; tope interno $300) |
+| Jobs de GPU en SageMaker (us-east-1) | 31 jobs, 25.6 horas facturables, **$301.82 USD** (estimado a precio de lista; tope de la primera fase, $300, alcanzado; el laboratorio de datos sintéticos corre en 1× L40S spot) |
 | Llamadas a Bedrock del examen | 11,957 llamadas, 53.1M tokens de entrada / 3.9M de salida |
-| Bedrock de Constanza (desde oct-2026) | ~15,600 llamadas al modelo, ~$1,080 USD a precio de lista (estimación del propio agente) |
-| Corpus de entrenamiento en S3 | 1 bucket, 1,432 objetos, ~193 GB (datos anonimizados, checkpoints, salidas) |
+| Bedrock de Constanza (desde oct-2026) | ~33,500 llamadas al modelo, ~$2,310 USD a precio de lista (estimación del propio agente) |
+| Corpus de entrenamiento en S3 | 1 bucket, 3,273 objetos, ~205 GB (datos anonimizados, checkpoints, salidas) |
 | Servidor siempre encendido | 1× EC2 m7i.2xlarge, mx-central-1 (México) |
-| Rutinas programadas | 71 definidas, 54 activas |
+| Rutinas programadas | 125 definidas, 97 activas |
 
 Cómo se obtuvo cada número y qué **no** pudimos verificar (Cost Explorer no se puede leer desde el rol del servidor)
 está en [Uso de AWS](docs/es/aws-usage.md).

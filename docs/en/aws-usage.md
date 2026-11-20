@@ -23,7 +23,7 @@ applied) come from AWS billing.
 | **Amazon EC2** | mx-central-1 | One m7i.2xlarge (8 vCPU, 30 GiB, 193 GB root volume) runs Constanza, our operations agent (built on Hermes Agent), 24/7: WhatsApp gateway, scheduler, orchestrators for GPU jobs, extraction and analysis scripts | 1 instance, always on. ~US$294/month at us-east-1 list price (estimate; Mexico Region price may differ) |
 | **Amazon Bedrock** | us-east-1 (cross-region and global inference profiles) | (a) Model behind the operations agent: Claude Opus 5.5. (b) Judges and reference candidates for the admissions-AI exam: Opus 4.7, Opus 5.5, Sonnet 5.5, Fable 5.1, Fable 5.2. (c) Research and message drafting in the prospect-research product | See tables below |
 | **Amazon SageMaker** (training jobs) | us-east-1 | LoRA fine-tuning of Nemotron, merge of adapters, and batch inference with vLLM for exams, teacher generation and fact sheets. Managed spot where possible | 29 jobs, 24.8 billable h, $299.51 |
-| **Amazon S3** | us-east-1 | Anonymized corpus (partitioned by pseudonymous account and outcome), fact sheets, SFT sets, LoRA checkpoints, merged models, job outputs | 1 bucket, 1,432 objects, ~193 GB |
+| **Amazon S3** | us-east-1 | Anonymized corpus (partitioned by pseudonymous account and outcome), fact sheets, SFT sets, LoRA checkpoints, merged models, job outputs | 1 bucket, 3,273 objects, ~205 GB |
 | **Amazon ECR** | us-east-1 | Two images mirrored for SageMaker: vLLM 0.27.1 and NVIDIA NeMo AutoModel 26.08 (from NGC) | 2 repositories/tags |
 | **IAM** | global | Least-privilege instance role for the server; separate role for SageMaker jobs | — |
 
@@ -36,10 +36,12 @@ applied) come from AWS billing.
 | Batch inference: teacher answers (v5) | 1 billed | 0.46 | $6.05 |
 | Batch inference: fact sheets by Nemotron | 1 billed | 0.11 | $1.44 |
 | Merge LoRA into base (CPU) | 3 | 0.68 | $1.64 |
+| Synthetic-data lab, round s1 (1× L40S spot) | 1 billed | 0.83 | $2.31 |
+| Synthetic-data lab, round s2 (running at publication time) | 1 | — | $0 so far |
 | Capacity-race twins and jobs stopped before starting | 8 | 0 | $0 |
-| **Total** | **29** | **24.8** | **$299.51** |
+| **Total** | **31** | **25.6** | **$301.82** |
 
-By instance type: ml.g6e.12xlarge (4× NVIDIA L40S) 22.3 h / $292.85; ml.g6e.2xlarge (1× L40S) 1.8 h / $5.03;
+By instance type: ml.g6e.12xlarge (4× NVIDIA L40S) 22.3 h / $292.85; ml.g6e.2xlarge (1× L40S) 2.6 h / $7.34;
 ml.r5.8xlarge 0.68 h / $1.64; ml.p5.4xlarge (1× H100) requested 4 times, never received capacity, $0.
 
 Spot was used on the large jobs. Every orchestrator checks the running total before launching and stops any job that

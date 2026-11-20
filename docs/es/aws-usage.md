@@ -23,7 +23,7 @@ los créditos aplicados) los da la facturación de AWS.
 | **Amazon EC2** | mx-central-1 | Un m7i.2xlarge (8 vCPU, 30 GiB, disco de 193 GB) corre a Constanza, nuestro agente de operaciones (construido sobre Hermes Agent), 24/7: gateway de WhatsApp, agenda de rutinas, orquestadores de GPU, scripts de extracción y análisis | 1 instancia, siempre encendida. ~$294 USD al mes a precio de lista de us-east-1 (estimado; el precio en la región de México puede variar) |
 | **Amazon Bedrock** | us-east-1 (perfiles entre regiones y globales) | (a) Modelo del agente de operaciones: Claude Opus 5.5. (b) Jueces y candidatos de referencia del examen: Opus 4.7, Opus 5.5, Sonnet 5.5, Fable 5.1, Fable 5.2. (c) Investigación y redacción en el producto de prospección | Ver tablas abajo |
 | **Amazon SageMaker** (training jobs) | us-east-1 | Fine-tuning LoRA de Nemotron, unión de adaptadores e inferencia por lotes con vLLM para exámenes, maestro y fichas. Spot cuando se puede | 29 jobs, 24.8 h facturables, $299.51 |
-| **Amazon S3** | us-east-1 | Corpus anonimizado (particionado por cuenta seudónima y resultado), fichas, sets de entrenamiento, checkpoints LoRA, modelos unidos, salidas de jobs | 1 bucket, 1,432 objetos, ~193 GB |
+| **Amazon S3** | us-east-1 | Corpus anonimizado (particionado por cuenta seudónima y resultado), fichas, sets de entrenamiento, checkpoints LoRA, modelos unidos, salidas de jobs | 1 bucket, 3,273 objetos, ~205 GB |
 | **Amazon ECR** | us-east-1 | Dos imágenes para SageMaker: vLLM 0.27.1 y NVIDIA NeMo AutoModel 26.08 (de NGC) | 2 repositorios/etiquetas |
 | **IAM** | global | Rol de mínimo privilegio para el servidor; rol aparte para los jobs de SageMaker | — |
 
@@ -36,10 +36,12 @@ los créditos aplicados) los da la facturación de AWS.
 | Inferencia por lotes: respuestas del maestro (v5) | 1 con cobro | 0.46 | $6.05 |
 | Inferencia por lotes: fichas escritas por Nemotron | 1 con cobro | 0.11 | $1.44 |
 | Unir LoRA con el modelo base (CPU) | 3 | 0.68 | $1.64 |
+| Laboratorio de datos sintéticos, vuelta s1 (1× L40S spot) | 1 con cobro | 0.83 | $2.31 |
+| Laboratorio de datos sintéticos, vuelta s2 (corriendo al publicar) | 1 | — | $0 por ahora |
 | Gemelos de la carrera por capacidad y jobs detenidos antes de arrancar | 8 | 0 | $0 |
-| **Total** | **29** | **24.8** | **$299.51** |
+| **Total** | **31** | **25.6** | **$301.82** |
 
-Por tipo de máquina: ml.g6e.12xlarge (4× NVIDIA L40S) 22.3 h / $292.85; ml.g6e.2xlarge (1× L40S) 1.8 h / $5.03;
+Por tipo de máquina: ml.g6e.12xlarge (4× NVIDIA L40S) 22.3 h / $292.85; ml.g6e.2xlarge (1× L40S) 2.6 h / $7.34;
 ml.r5.8xlarge 0.68 h / $1.64; ml.p5.4xlarge (1× H100) se pidió 4 veces, nunca hubo capacidad, $0.
 
 Los jobs grandes usaron spot. Cada orquestador revisa el gasto acumulado antes de lanzar y detiene cualquier job que
